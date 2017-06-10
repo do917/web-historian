@@ -13,12 +13,13 @@
     "start": "node ./web/basic-server.js",
     "start:es6": "babel-node ./web/basic-server.js",
     "test": "mocha test",
-    "test:es6": "mocha --compilers js:babel-register test",
+    "test:es6": "mocha --compilers js:babel-register test -w",
     "lint": "eslint ./"
   },
   "dependencies": {
     "bluebird": "^3.3.4",
     "cron": "^1.1.0",
+    "node-fetch": "^1.7.1",
     "request": "^2.70.0",
     "underscore": "^1.8.3"
   },
